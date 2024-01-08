@@ -140,8 +140,8 @@ git push
 
 ```mermaid
 graph LR;
-  HEAD-->refs/heads/main;
-  refs/heads/main-->Хэш последнего коммита;
+  HEAD-->[refs/heads/main];
+  [refs/heads/main]-->[Хэш последнего коммита];
 ```
 
 ### Ещё немного о `git log`
