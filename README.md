@@ -182,9 +182,9 @@ Git увидел этот файл, но не отслеживает его из
 
 ```mermaid
 graph LR;
-  untracked -- (["git add"]) --> staged;
-  modified -- (["git add]") --> staged;
-  staged -- (["Изменения в файле"]) --> modified;
-  staged -- (["git commit"]) --> tracked;
-  tracked -- (["Изменения в файле"]) --> modified;
+  untracked -- "git add" --> staged;
+  modified -- "git add" --> staged;
+  staged -- "Изменения в файле" --> modified;
+  staged -- "git commit" --> tracked;
+  tracked -- "Изменения в файле" --> modified;
 ```
